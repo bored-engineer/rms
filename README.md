@@ -48,12 +48,12 @@ $ rms license fetch "$access_token" unpacked/DataSpaces/TransformInfo/DRMTransfo
 ```
 Decrypt the DRM content using the user license file:
 ```
-$ rms license decrypt -o decrypted/ user.license unpacked/DRMContent
+$ rms license decrypt user.license unpacked/DRMContent
 Decrypted 4096 bytes from unpacked/DRMContent
 ```
 Unpack the decrypted DRM contents:
 ```
-$ rms compound unpack decrypted.compound
+$ rms compound unpack -o decrypted/ decrypted.compound
 Wrote 1554 bytes from entry: BodyPT-HTML
 Wrote 16 bytes from entry: RpmsgStorageInfo
 Wrote 6 bytes from entry: OutlookBodyStreamInfo
