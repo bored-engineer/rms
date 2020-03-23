@@ -1,4 +1,4 @@
-# rms - Go libraries for Azure Rights Management
+# rms - Go libraries for Azure Rights Management [![GoDoc](https://img.shields.io/static/v1?label=godoc&message=reference&color=blue)](https://godoc.org/github.com/bored-engineer/rms/aadrm)
 `rms` is a MVP implementation of the necessary code to interact and decrypt (and maybe someday encrypt) Azure Rights Management protected content.
 It is written in Go and has no dependencies on native libraries or functions making it platform agnostic.
 
