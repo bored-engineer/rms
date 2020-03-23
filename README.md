@@ -1,20 +1,21 @@
 # rms - Go libraries for Azure Rights Management
 `rms` is a MVP implementation of the necessary code to interact and decrypt (and maybe someday encrypt) Azure Rights Management protected content.
-It is written in Go and has no dependencies on native libraries
+It is written in Go and has no dependencies on native libraries or functions making it platform agnostic.
 
 ## Should I use this in production?
-Absolutely no. Under any circumstances. This library is an MVP state and was mainly written out of curiosity.
+Absolutely not under any circumstances. This library is at MVP state and was mainly written out of curiosity while I learned how the APIs worked.
 
 ## Installation
+The RMS CLI can be installed as follows:
 ```
 go install github.com/bored-engineer/rms
 ```
 
 ## Usage
-Generally this library is intended to be used via the API, however a `rms` CLI is bundled with the client for basic operations/debugging.
+Generally this library is intended to be used via the Go API, however a `rms` CLI is bundled with the client for basic operations/debugging.
 
 ### Decrypt an rpmsg file
-Decode the [rpmsg file|https://en.wikipedia.org/wiki/Rpmsg] into a [compound file|https://en.wikipedia.org/wiki/Compound_File_Binary_Format]:
+Decode the [rpmsg file](https://en.wikipedia.org/wiki/Rpmsg) into a [compound file](https://en.wikipedia.org/wiki/Compound_File_Binary_Format):
 ```
 $ rms rpmsg decode message.rpmsg
 Decoded 52224 bytes to compound file: rpmsg.compound
